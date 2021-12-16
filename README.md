@@ -1,6 +1,8 @@
 # ViajesInterestelares
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## install node modules
+Run `ng install` to install the necessary packages to run the application
 
 ## Development server
 
