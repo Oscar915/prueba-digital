@@ -98,6 +98,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/viajes-interestelares",
+            "netlifyToken": "JA95GGthZjPIi1B-ePVvu06NQmka6ydKneRLEg-65D4",
+            "siteId": "d69b7348-2d2c-457b-ad24-d54c016ad87e"
+          }
         }
       }
     }

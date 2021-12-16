@@ -1,3 +1,4 @@
+
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Viaje } from '../../models/viaje';
@@ -11,6 +12,7 @@ export class AgregarComponent implements OnInit {
 
    //Formulario para agregar un viaje
    viajeForm!: FormGroup;
+   fecha: any= new Date()
 
    @Output() onNuevoViaje : EventEmitter<Viaje>= new EventEmitter();
 
@@ -19,7 +21,7 @@ export class AgregarComponent implements OnInit {
   ngOnInit(): void {
     this.viajeForm = this.fb.group({
       ubicacion: ['',Validators.required],
-      llegada: ['',Validators.required],
+      llegada: [ ,Validators.required],
       salida: ['',Validators.required],
       pasajeros: ['',Validators.required],
     })

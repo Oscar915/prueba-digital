@@ -6,26 +6,36 @@
         <div class="mb-3 ">
             <label class="form-label">Ubicación</label>
             <input type="text" class="form-control" formControlName="ubicacion">
+            <span *ngIf="viajeForm.controls['ubicacion'].errors && viajeForm.controls['ubicacion'].touched" class="text-danger form-text">
+                Campo obligatorio
+              </span>
         </div>
 
         <div class="mb-3 ">
             <label class="form-label">Llegada</label>
-            <input type="date" class="form-control" formControlName="llegada" placeholder="fecha de llegada">
+            <input type="date" class="form-control" formControlName="llegada" placeholder="fecha de llegada" >
+            <span *ngIf="viajeForm.controls['llegada'].errors && viajeForm.controls['llegada'].touched" class="text-danger form-text">
+                Campo obligatorio
+              </span>
         </div>
 
         <div class="mb-3 ">
             <label class="form-label">Salida</label>
             <input type="date" class="form-control" formControlName="salida" placeholder="fecha de salida">
+            <span *ngIf="viajeForm.controls['salida'].errors && viajeForm.controls['salida'].touched" class="text-danger form-text">
+                Campo obligatorio
+              </span>
         </div>
 
         <div class="mb-3 ">
             <label class="form-label">Pasajeros</label>
             <input type="number" class="form-control" formControlName="pasajeros" placeholder="Agregar pasajeros">
+            <span *ngIf="viajeForm.controls['pasajeros'].errors && viajeForm.controls['pasajeros'].touched" class="text-danger form-text">
+                Campo obligatorio
+              </span>
         </div>
     </div>
-    <div class="container">
-    <span *ngIf="!viajeForm.valid" class="text-danger">*Debe llenar todos los campos</span>
-    </div>
+    
     <div class="mb-3 text-center">
         <button class="btn btn-primary">Agregar</button>
      </div>
