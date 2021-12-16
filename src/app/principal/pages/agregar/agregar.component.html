@@ -1,1 +1,32 @@
-<p>agregar works!</p>
+<form [formGroup]="viajeForm" (submit)="agregar()">
+    <div class="text-center">
+        <h2>Agregar viaje</h2>
+    </div>
+    <div class="flex ">
+        <div class="mb-3 ">
+            <label class="form-label">Ubicación</label>
+            <input type="text" class="form-control" formControlName="ubicacion">
+        </div>
+
+        <div class="mb-3 ">
+            <label class="form-label">Llegada</label>
+            <input type="date" class="form-control" formControlName="llegada" placeholder="fecha de llegada">
+        </div>
+
+        <div class="mb-3 ">
+            <label class="form-label">Salida</label>
+            <input type="date" class="form-control" formControlName="salida" placeholder="fecha de salida">
+        </div>
+
+        <div class="mb-3 ">
+            <label class="form-label">Pasajeros</label>
+            <input type="number" class="form-control" formControlName="pasajeros" placeholder="Agregar pasajeros">
+        </div>
+    </div>
+    <div class="container">
+    <span *ngIf="!viajeForm.valid" class="text-danger">*Debe llenar todos los campos</span>
+    </div>
+    <div class="mb-3 text-center">
+        <button class="btn btn-primary">Agregar</button>
+     </div>
+</form>

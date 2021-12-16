@@ -1,1 +1,12 @@
-<p>inicio works!</p>
+<div class="container mt-3">
+<button class="btn btn-danger" (click)="cerrar()">Cerrar sesión
+</button>
+</div>
+<div class=" mt-5 ">
+    <div class="flex">
+            <app-agregar (onNuevoViaje) = "agregar( $event )"></app-agregar>
+        <div class="container mt-5">
+           <app-listar [viajes]="viajes"></app-listar>
+        </div>
+    </div>
+</div>

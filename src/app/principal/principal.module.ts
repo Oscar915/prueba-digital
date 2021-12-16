@@ -4,6 +4,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { ListarComponent } from './pages/listar/listar.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { PrincipalRoutingModule } from './principal-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -16,7 +17,8 @@ import { PrincipalRoutingModule } from './principal-routing.module';
   ],
   imports: [
     CommonModule,
-    PrincipalRoutingModule
+    PrincipalRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PrincipalModule { }

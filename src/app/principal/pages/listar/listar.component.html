@@ -1,1 +1,21 @@
-<p>listar works!</p>
+<div class="text-center">
+    <h2>Lista de viajes</h2>
+</div>
+<table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">Ubicación</th>
+        <th scope="col">Fecha llegada</th>
+        <th scope="col">Fecha Salida</th>
+        <th scope="col">N° pasajeros</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let p of viajes">
+      <tr>
+        <td>{{p.ubicacion}}</td>
+        <td>{{p.llegada}}</td>
+        <td>{{p.salida}}</td>
+        <td>{{p.pasajeros}}</td>
+      </tr>
+    </tbody>
+  </table>

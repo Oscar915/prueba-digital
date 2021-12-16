@@ -1,0 +1,20 @@
+[
+    {
+        "ubicacion": "Marte",
+        "llegada": "2021-12-23",
+        "salida": "2021-12-29",
+        "pasajeros": 6
+    },
+    {
+        "ubicacion": "Sol",
+        "llegada": "2021-12-23",
+        "salida": "2021-12-31",
+        "pasajeros": 56
+    },
+    {
+        "ubicacion": "Venus",
+        "llegada": "2021-12-11",
+        "salida": "2021-12-13",
+        "pasajeros": 37
+    }
+]
